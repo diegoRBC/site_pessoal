@@ -1,19 +1,19 @@
-
-*{
+* {
     box-sizing: border-box;
-   
+
 }
-body{
-    background:linear-gradient(to bottom, #5BC9FF , #2b43dd 30%, #5BC9FF );
+
+body {
+    background: linear-gradient(to bottom, #5BC9FF, #2b43dd 30%, #5BC9FF);
     margin: 0;
     padding: 0;
-    height: 200%;
+    height: 100%;
+   
 }
 
-
-hr.hr-shadow{
+hr.hr-shadow {
     height: 6px;
-    background:transparent;
+    background: transparent;
     box-shadow: 2px 3px 4px black inset;
     margin: 0;
 }
@@ -21,29 +21,32 @@ hr.hr-shadow{
 /* CSS do logo tipo*/
 
 
-img#logotipo{
+img#logotipo {
 
-    width: 8%;
+    width: 15%;
     margin: 0;
     padding: 0;
-     height: 8%;
-     
+    height: 15%;
+
 }
+
 /* Sobre Min --inicio-- */
 
-    
-    
 
-div.container.caixa_texto{
+
+
+div.container.caixa_texto {
     height: 25%;
-    margin: 10%;
+  
     width: 100%;
-    padding-top: 5%;
+    padding-top: 15%;
 }
-div#bc{
+
+div#bc {
     margin: 15px 42.5%;
     height: 25%;
 }
+
 .btn {
     background-color: rgb(211, 214, 218);
     border: none;
@@ -59,24 +62,25 @@ div#bc{
 }
 
 /*Inicio da Timeline */
-h1.lt{
-    
+h1.lt {
+
     text-align: center;
-   margin: 0;
-   padding: 2%;
+    margin: 0;
+    padding: 2%;
 
 }
 
 div.container.tmp {
-    background-color:liner-gradient(to right,rgb(109, 152, 233),rgba(71, 88, 238, 0.932));
+    background-color: liner-gradient(to right, rgb(109, 152, 233), rgba(71, 88, 238, 0.932));
     font-family: Helvetica,
         sans-serif;
-        padding: 0;
-       height: 25%;
-        
-        
-       
+    padding: 0;
+    height: 25%;
+
+
+
 }
+
 /*linha do tempo em vestical*/
 .timeline {
     position: relative;
@@ -96,13 +100,14 @@ div.container.tmp {
     left: 50%;
     margin-left: -3px;
 }
+
 /* preparando o recipiente */
-div.container .pj{
+div.container .pj {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-    
+
 }
 
 /* Criando os circulos da linha do tempo */
@@ -113,7 +118,7 @@ div.container .pj::after {
     height: 25px;
     right: -17px;
     background-color: rgb(224, 31, 31);
-    box-shadow: 1px 1px 10px black ;
+    box-shadow: 1px 1px 10px black;
     border: 4px solid #f1eeeb;
     top: 15px;
     border-radius: 50%;
@@ -125,6 +130,7 @@ div.container .pj::after {
     right: 0.5%;
     margin: 0;
 }
+
 /* colocando o conteiner a direita */
 .right {
     left: 25.3%;
@@ -142,7 +148,7 @@ div.container .pj::after {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent rgb(138, 133, 133);
-    
+
 }
 
 /* Adiciona setas ao container direita (apontando para a esquerda) */
@@ -168,45 +174,71 @@ div.container .pj::after {
 .content {
     padding: 20px 30px;
     background-color: white;
-    
+
     position: relative;
     border-radius: 6px;
     box-shadow: 1px 1px 10px #000000;
-    
+
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-div.container.sobre-mim {
-    height: 30%;
-    width: 100%;
-    margin: 35% 0 30% 0;
 
-}
-div#bc {
-    margin: 0;
-    
-    height: 30%;
-}
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-    .container.tmp{
-    width: 98%;
+    .container {
+        margin: 0;
+        padding: 0;
 
-}
+    }
+
+    div.container.caixa_texto {
+       
+        height: 30%;
+        margin: 100%;
+        padding: 5%;
+        margin: 0;
+        float: center;
+      
+
+    }
+   div#Sobre{
+       padding: 40% 5%;
+   }
+
+    div#bc {
+        margin: 0;
+
+        height: 30%;
+    }
+
+    .container.tmp {
+        width: 100%;
+
+
+    }
+
     /* Coloca a timeline à esquerda */
     .timeline::after {
         left: 7.5%;
     }
 
     /* Contêineres de largura total */
-    .container .pj{
+    .container .pj {
         width: 100%;
         padding-left: 70px;
         padding-right: 30px;
-       right: 20%;
+        right: 20%;
     }
-    .content{
-width: 120%;
+
+    .content {
+        width: 300%;
+       
+        margin: 0%;
+        
     }
 
     /* Verifique se todas as setas estão apontando para a esquerda */
@@ -216,20 +248,24 @@ width: 120%;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
         border-color: transparent rgb(156, 152, 152) transparent transparent;
-        
+
     }
 
-/* Verifique se todos os círculos estão no mesmo local */
-    .left::after, .right::after {
-       left: 0;
-       
+    /* Verifique se todos os círculos estão no mesmo local */
+    .left::after,
+    .right::after {
+        left: 0;
+
     }
-.left{
-    left:20px;
-}
-/* Faz com que todos os containers certos se comportem como os da esquerda */
+
+    .left {
+        left: 20px;
+    }
+
+    /* Faz com que todos os containers certos se comportem como os da esquerda */
     .right {
-      left: 20px;
-      margin: 0;
+        left: 20px;
+        margin: 0;
     }
+
 }
