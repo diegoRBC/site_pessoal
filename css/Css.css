@@ -205,6 +205,11 @@ div.container .pj::after {
       
 
     }
+    div.container.caixa_texto p {
+        font-size: 115%;
+    }
+
+
    div#Sobre{
        padding: 40% 5%;
    }
@@ -236,10 +241,16 @@ div.container .pj::after {
 
     .content {
         width: 300%;
-       
+        
         margin: 0%;
         
     }
+    .content h2{
+       font-size: 150%;
+    }
+     .content p {
+         font-size: 100%;
+     }
 
     /* Verifique se todas as setas estão apontando para a esquerda */
     .container .pj::before {
