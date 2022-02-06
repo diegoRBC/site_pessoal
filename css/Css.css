@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-
-}
 
 body {
     background: linear-gradient(to bottom, #5BC9FF, #2b43dd 30%, #5BC9FF);
@@ -27,7 +23,11 @@ img#logotipo {
     margin: 0;
     padding: 0;
     height: 15%;
+    transition: transform 5s ;
 
+}
+img#logotipo:hover{
+     transform: rotate(360deg);
 }
 
 /* Sobre Min --inicio-- */
@@ -64,10 +64,22 @@ div#bc {
 /*Inicio da Timeline */
 h1.lt {
 
+  
     text-align: center;
-    margin: 0;
-    padding: 2%;
-
+    margin: 5% 0;
+    padding: 0;
+     transition:color 5s text-shadow 5s;
+   
+}
+h1.lt:hover{
+    color: rgb(15, 19, 201);
+      text-shadow: 1px 1px #0a0d0f,
+      2px 2px #282829,
+      3px 3px #19191a;
+      -webkit-transform: translateX(5px);
+      transform: translateX(6px);
+      cursor: default;
+      
 }
 
 div.container.tmp {
@@ -178,9 +190,12 @@ div.container .pj::after {
     position: relative;
     border-radius: 6px;
     box-shadow: 1px 1px 10px #000000;
-
+    transition: background 3s, color 3s;
 }
-
+.content:hover{
+   background: transparent 99%;
+   color: blanchedalmond;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
@@ -199,19 +214,21 @@ div.container .pj::after {
        
         height: 30%;
         margin: 100%;
-        padding: 5%;
+        padding: 10%;
         margin: 0;
         float: center;
       
 
     }
     div.container.caixa_texto p {
-        font-size: 115%;
+        font-size: 118%;
     }
 
 
    div#Sobre{
-       padding: 40% 5%;
+       padding-top: 40% ;
+       padding-left: 10%;
+       padding-right: 10%;
    }
 
     div#bc {
@@ -222,7 +239,7 @@ div.container .pj::after {
 
     .container.tmp {
         width: 100%;
-
+margin: 0%;
 
     }
 
@@ -240,16 +257,17 @@ div.container .pj::after {
     }
 
     .content {
-        width: 300%;
-        
+        width: 250%;
+        padding: 3% 5%;
         margin: 0%;
-        
+        overflow-wrap: break-word;
     }
     .content h2{
-       font-size: 150%;
+       font-size: 140%;
     }
      .content p {
-         font-size: 100%;
+         font-size: 95%;
+       width: 100%;
      }
 
     /* Verifique se todas as setas estão apontando para a esquerda */
